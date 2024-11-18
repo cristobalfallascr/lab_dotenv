@@ -12,6 +12,8 @@ on:
 
 jobs:
   build:
+    env:
+      TEST1: ${{secrets.TEST1}}
     runs-on: ubuntu-latest
 
     steps:
